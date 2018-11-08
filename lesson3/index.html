@@ -12,18 +12,84 @@
 
         <style type="text/css">
             .box{
-                margin: 20px;
                 padding: 20px;
-                border: 5px solid #a3280a;
-                background: #ffe033;
+                border: 1px solid #8a8f9b;
+                background: #f6f6f9;
+            }
+            .row{
+                height: 300px;
+                margin-top: 10px;
+                background: #8a8a8a;
+            }
+
+            .box1{
+                background: #4c7c4c;
+            }
+
+            .box2{
+                padding: 1px;
+                background: #7878be;
             }
          </style>
                
     </head>
-    
+
     <body>
             <div class="container">
-                <div class="box">content</div>
+
+                 <div class="row align-items-center">
+                    <div class="box col">垂直置中</div>
+                </div>
+
+                <div class="row justify-content-center">
+                        <div class="box col-2">水平置中</div>
+                </div>                        
+        
+                <div class="row">
+                    <div class="box col col-sm-9">
+                         One of three columns
+                    </div>
+                     <div class="box col col-sm-3 ">
+                         One of three columns
+                    </div>
+                </div>
+                            
+                <div class="row">
+                    <div class="box col-sm">
+                        One of three columns
+                    </div>
+                    <div class="box col-sm">
+                         One of three columns
+                    </div>
+                    <div class="box col-sm">
+                        One of three columns
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="box col-4">
+                             One of three columns
+                        </div>
+                         <div class="box col-8">
+                             One of three columns
+                        </div>
+                 </div>
+
+                 <div class="row">
+                        <div class="box1 d-sm-none">
+                             hide on screens wider than sm
+                        </div>
+                         <div class="box2 d-none d-sm-block">
+                            hide on screens smaller than sm
+                        </div>
+                 </div>
+
+                 <div class="row">
+                        <div class="box col-md-3 offset-md-3">.col-md-3</div>
+                        <div class="box col-md-3 offset-md-3">.col-md-3></div>
+                </div>
+             
+
             </div>
 
         <!-- Optional JavaScript -->
